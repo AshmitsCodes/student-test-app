@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Test App</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Student Test App</h1>
+
+    <!-- Start Screen -->
+    <div id="start-screen">
+      <input type="text" id="username" placeholder="Enter your name" required />
+      <button onclick="startTest()">Start Test</button>
+    </div>
+
+    <!-- Test Screen -->
+    <div id="test-screen" style="display: none;">
+      <div class="header">
+        <span id="user-display"></span>
+        <span id="timer"></span>
+      </div>
+     <div id="question-container"></div>
+
+<div class="nav-buttons">
+  <button onclick="prevQuestion()">Previous</button>
+  <span id="progress-text"></span>
+  <button onclick="nextQuestion()">Next</button>
+</div>
+
+<button onclick="submitTest()" id="submit-btn" style="display: none;">Submit</button>
+
+
+    <!-- Result Section -->
+    <div id="result" style="display: none;"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
