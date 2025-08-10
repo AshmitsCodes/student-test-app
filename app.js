@@ -26,13 +26,17 @@ function startTest() {
   document.getElementById("test-screen").style.display = "block";
   document.getElementById("user-display").innerText = "Name: " + name;
 
-  questions = shuffle(questions);
+  // Shuffle questions and take only first 50
+  questions = shuffle(questions).slice(0, 50);
+
+  // Shuffle options inside each question
   questions.forEach(q => q.options = shuffle(q.options));
 
   displayQuestion(currentQuestionIndex);
   startTime = Date.now();
   startTimer();
 }
+
 
 function startTimer() {
   const timerDisplay = document.getElementById("timer");
