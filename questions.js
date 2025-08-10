@@ -1,102 +1,102 @@
 window.questions = [
-  {
-    question: "Which of the following are polynomials?",
-    options: ["x^2 + 3x + 2", "√x + 1", "x/2 + 3", "|x| + 5"],
-    answer: ["x^2 + 3x + 2", "x/2 + 3"]
-  },
-  {
-    question: "What is the degree of the polynomial: 5x^3 + 4x^2 - 7?",
-    options: ["1", "2", "3", "4"],
-    answer: ["3"]
-  },
-  {
-    question: "Which of the following is a linear polynomial?",
-    options: ["x + 2", "x^2 + 3", "2x^2 - x", "x^3 + 5"],
-    answer: ["x + 2"]
-  },
-  {
-    question: "A polynomial has degree 0. Which of the following can it be?",
-    options: ["5", "0", "x", "x + 1"],
-    answer: ["5", "0"]
-  },
-  {
-    question: "If x - 1 is a factor of x^2 - x, what is the remainder?",
-    options: ["0", "1", "-1", "2"],
-    answer: ["0"]
-  },
-  {
-    question: "Which of these are quadratic polynomials?",
-    options: ["x^2 + 3x + 1", "2x + 5", "3x^2 - x", "x^3 - 4"],
-    answer: ["x^2 + 3x + 1", "3x^2 - x"]
-  },
-  {
-    question: "The zero of the polynomial x - 4 is:",
-    options: ["0", "4", "-4", "1"],
-    answer: ["4"]
-  },
-  {
-    question: "If (x + 3) is a factor of a polynomial, what must be true?",
-    options: ["x = -3 is a zero", "x = 3 is a zero", "x + 3 = 0", "x - 3 = 0"],
-    answer: ["x = -3 is a zero", "x + 3 = 0"]
-  },
-  {
-    question: "Which polynomial represents the product of (x + 2)(x - 3)?",
-    options: ["x^2 - x - 6", "x^2 + x - 6", "x^2 - 6", "x^2 - 3x + 2"],
-    answer: ["x^2 - x - 6"]
-  },
-  {
-    question: "Which terms represent a cubic polynomial?",
-    options: ["x^3 + x^2 + x + 1", "3x^2 + 4", "x^3 + 2", "x^4 + x"],
-    answer: ["x^3 + x^2 + x + 1", "x^3 + 2"]
-  },
-  {
-    question: "The value of the polynomial x^2 - 2x + 1 at x = 1 is:",
-    options: ["1", "0", "-1", "2"],
-    answer: ["0"]
-  },
-  {
-    question: "Which of these is not a polynomial?",
-    options: ["x^2 + 1", "3/x + 2", "x^3 - x", "x + √2"],
-    answer: ["3/x + 2"]
-  },
-  {
-    question: "How many zeroes does a cubic polynomial have at most?",
-    options: ["1", "2", "3", "4"],
-    answer: ["3"]
-  },
-  {
-    question: "The graph of a quadratic polynomial is:",
-    options: ["A straight line", "A parabola", "A circle", "An ellipse"],
-    answer: ["A parabola"]
-  },
-  {
-    question: "Which expressions are factors of x^2 - 9?",
-    options: ["x - 3", "x + 3", "x^2 + 3", "x^2 - 3"],
-    answer: ["x - 3", "x + 3"]
-  },
-  {
-    question: "Find the degree of polynomial: 6x^5 + 2x^4 + x^3.",
-    options: ["3", "4", "5", "6"],
-    answer: ["5"]
-  },
-  {
-    question: "Which of these have zeroes at x = 2 and x = -2?",
-    options: ["x^2 - 4", "x^2 + 4", "x^2 - 2", "(x - 2)(x + 2)"],
-    answer: ["x^2 - 4", "(x - 2)(x + 2)"]
-  },
-  {
-    question: "Which of the following are constant polynomials?",
-    options: ["5", "0", "x", "x^2"],
-    answer: ["5", "0"]
-  },
-  {
-    question: "What is the value of the polynomial 2x^2 + 3x - 1 at x = 2?",
-    options: ["9", "11", "13", "15"],
-    answer: ["13"]
-  },
-  {
-    question: "Which polynomial has a degree of 1?",
-    options: ["x + 5", "x^2 + x", "x^3", "2x^2 + 1"],
-    answer: ["x + 5"]
-  }
+  // --------- BASIC (1-35) ----------
+  { question: "sin 30° equals:", options: ["1/2", "√3/2", "1", "None of these"], answer: ["A"] },
+  { question: "cos 60° equals:", options: ["1/2", "√3/2", "0", "None of these"], answer: ["A"] },
+  { question: "tan 45° equals:", options: ["0", "1", "∞", "None of these"], answer: ["B"] },
+  { question: "sin²A + cos²A equals for any angle A:", options: ["0", "1", "sin A", "None of these"], answer: ["B"] },
+  { question: "cot 45° equals:", options: ["1", "√3", "0", "None of these"], answer: ["A"] },
+  { question: "sec 0° equals:", options: ["0", "1", "2", "None of these"], answer: ["B"] },
+  { question: "cosec 90° equals:", options: ["0", "1", "∞", "None of these"], answer: ["B"] },
+  { question: "If sin A = 3/5 (A acute), cos A equals:", options: ["4/5", "3/4", "5/4", "None of these"], answer: ["A"] },
+  { question: "tan A × cot A equals:", options: ["1", "tan²A", "0", "None of these"], answer: ["A"] },
+  { question: "cos²30° equals:", options: ["3/4", "1/2", "√3/2", "None of these"], answer: ["A"] },
+  { question: "sin 90° equals:", options: ["1", "0", "1/2", "None of these"], answer: ["A"] },
+  { question: "cos 0° equals:", options: ["0", "1", "−1", "None of these"], answer: ["B"] },
+  { question: "tan 0° equals:", options: ["0", "1", "Undefined", "None of these"], answer: ["A"] },
+  { question: "If cos A = 12/13 (A acute), tan A equals:", options: ["5/12", "12/5", "13/12", "None of these"], answer: ["A"] },
+  { question: "Reciprocal of sin A is:", options: ["cot A", "sec A", "cosec A", "None of these"], answer: ["C"] },
+  { question: "Reciprocal of cos A is:", options: ["sec A", "cosec A", "tan A", "None of these"], answer: ["A"] },
+  { question: "sin 45° equals:", options: ["√2/2", "√3/2", "1/2", "None of these"], answer: ["A"] },
+  { question: "cos 45° equals:", options: ["√2/2", "1", "0", "None of these"], answer: ["A"] },
+  { question: "sin 60° equals:", options: ["√3/2", "1/2", "√2/2", "None of these"], answer: ["A"] },
+  { question: "cos 30° equals:", options: ["√3/2", "1/2", "√2/2", "None of these"], answer: ["A"] },
+  { question: "If sin A = 0, then A could be (0°–360°):", options: ["0° or 180°", "90°", "45°", "None of these"], answer: ["A"] },
+  { question: "If cos A = 0, then A could be (0°–360°):", options: ["90° or 270°", "0°", "180°", "None of these"], answer: ["A"] },
+  { question: "tan 30° equals:", options: ["1/√3", "√3", "1", "None of these"], answer: ["A"] },
+  { question: "cot 30° equals:", options: ["√3", "1/√3", "1", "None of these"], answer: ["A"] },
+  { question: "sin(90° − A) equals:", options: ["cos A", "sin A", "tan A", "None of these"], answer: ["A"] },
+  { question: "tan(90° − A) equals:", options: ["cot A", "tan A", "sec A", "None of these"], answer: ["A"] },
+  { question: "Which of the following equals 1 + tan²A?", options: ["sec²A", "cosec²A", "1", "None of these"], answer: ["A"] },
+  { question: "Which of the following equals 1 + cot²A?", options: ["sec²A", "cosec²A", "1", "None of these"], answer: ["B"] },
+  { question: "If sin A = 5/13 (A acute), tan A equals:", options: ["5/12", "12/5", "5/13", "None of these"], answer: ["A"] },
+  { question: "If tan A = 0 then A equals (0°–180°):", options: ["0° or 180°", "90°", "45°", "None of these"], answer: ["A"] },
+  { question: "If sec A = 2 (A acute), cos A equals:", options: ["1/2", "2", "√3/2", "None of these"], answer: ["A"] },
+  { question: "If cosec A = 2 (A acute), sin A equals:", options: ["1/2", "2", "√3/2", "None of these"], answer: ["A"] },
+
+  // --------- INTERMEDIATE (36-70) ----------
+  { question: "If cos A = 4/5, sin A equals (A acute):", options: ["3/5", "4/3", "1/5", "None of these"], answer: ["A"] },
+  { question: "If tan A = 3/4, sec A equals:", options: ["5/4", "4/5", "5/3", "None of these"], answer: ["A"] },
+  { question: "If sin A = 3/5, cosec A equals:", options: ["5/3", "3/5", "4/5", "None of these"], answer: ["A"] },
+  { question: "If tan A = 1, which is true:", options: ["A = 45°", "A = 30°", "A = 60°", "None of these"], answer: ["A"] },
+  { question: "Simplify: sin²A − cos²A equals:", options: ["−cos 2A", "cos 2A", "sin 2A", "None of these"], answer: ["B"] },
+  { question: "Which is equal to cos 2A?", options: ["cos²A − sin²A", "sin²A + cos²A", "tan²A", "None of these"], answer: ["A"] },
+  { question: "Value of sin 15° equals:", options: ["(√6 − √2)/4", "(√6 + √2)/4", "1/2", "None of these"], answer: ["A"] },
+  { question: "Value of cos 15° equals:", options: ["(√6 + √2)/4", "(√6 − √2)/4", "√3/2", "None of these"], answer: ["A"] },
+  { question: "If sin(A + B) = sin A cos B + cos A sin B, it's called:", options: ["Sine addition formula", "Cosine addition formula", "Double-angle formula", "None of these"], answer: ["A"] },
+  { question: "If sin A = 12/13 (A acute), cos A equals:", options: ["5/13", "12/5", "13/12", "None of these"], answer: ["A"] },
+  { question: "If cos A = 5/13 (A acute), sin A equals:", options: ["12/13", "5/12", "13/5", "None of these"], answer: ["A"] },
+  { question: "If tan A = 5/12, sin A equals:", options: ["5/13", "12/13", "5/12", "None of these"], answer: ["A"] },
+  { question: "Which of these equalities are correct? (multiple correct possible)", options: ["sec²A − tan²A = 1", "tan²A + 1 = sec²A", "sin²A + cos²A = 2", "None of these"], answer: ["A","B"] },
+  { question: "From a point 20 m from a tower the angle of elevation is 45°, height of tower is:", options: ["20 m", "10 m", "20√2 m", "None of these"], answer: ["A"] },
+  { question: "A ladder 10 m long leans making 30° with ground. Height reached on wall:", options: ["5√3 m", "5 m", "10 m", "None of these"], answer: ["A"] },
+  { question: "If sin A = 0.6 and cos A = 0.8, tan A equals (approx):", options: ["0.75", "0.6", "1.333...", "None of these"], answer: ["A"] },
+  { question: "If tan A = 2/3, sin A equals (in simplest surd form):", options: ["2/√13", "3/√13", "2/3", "None of these"], answer: ["A"] },
+  { question: "Which of these are co-function identities? (multiple correct)", options: ["sin(90° − A) = cos A", "cos(90° − A) = sin A", "tan(90° − A) = tan A", "None of these"], answer: ["A","B"] },
+  { question: "If tan 2A = 1 and 2A is acute, smallest positive 2A is:", options: ["45°", "30°", "90°", "None of these"], answer: ["A"] },
+  { question: "If sin A = 7/25, cos A equals:", options: ["24/25", "7/24", "25/24", "None of these"], answer: ["A"] },
+  { question: "tan 60° × tan 30° equals:", options: ["1", "√3", "1/3", "None of these"], answer: ["A"] },
+  { question: "If sin²A = 1/4 (A acute), cos²A equals:", options: ["3/4", "1/2", "1/4", "None of these"], answer: ["A"] },
+  { question: "If sec A = 5/4 (A acute), cos A equals:", options: ["4/5", "5/4", "3/4", "None of these"], answer: ["A"] },
+  { question: "If cosec A = 13/5 (A acute), sin A equals:", options: ["5/13", "13/5", "12/13", "None of these"], answer: ["A"] },
+  { question: "Which is equal to sin 2A?", options: ["2 sin A cos A", "sin²A + cos²A", "cos 2A", "None of these"], answer: ["A"] },
+  { question: "If tan(A + B) = (tan A + tan B)/(1 − tan A tan B), and tan A = 1, tan B = 1/2, tan(A + B) equals:", options: ["3", "1", "−3", "None of these"], answer: ["A"] },
+  { question: "If in a right triangle opposite = 3 and hypotenuse = 5, cos equals:", options: ["4/5", "3/4", "5/3", "None of these"], answer: ["A"] },
+  { question: "Which of these are identities? (multiple correct)", options: ["sin²A + cos²A = 1", "tan A + cot A = 1", "1 + cot²A = cosec²A", "None of these"], answer: ["A","C"] },
+  { question: "If sin(30° + A) = sin30°cosA + cos30°sinA, this demonstrates:", options: ["Sine addition formula", "Sine double-angle formula", "Cosine addition formula", "None of these"], answer: ["A"] },
+  { question: "A pole 12 m high casts shadow 6√3 m. Angle of elevation of Sun is:", options: ["30°", "60°", "45°", "None of these"], answer: ["A"] },
+  { question: "If sin A = 8/17 (A acute), tan A equals:", options: ["8/15", "15/8", "8/17", "None of these"], answer: ["A"] },
+  { question: "If cos(A − B) = cos A cos B + sin A sin B, that is:", options: ["Cosine difference formula", "Sine addition formula", "Tangent formula", "None of these"], answer: ["A"] },
+  { question: "tan(90° − A) equals which of the following? (multiple correct)", options: ["cot A", "tan A", "1/tan A", "None of these"], answer: ["A","C"] },
+
+  // --------- HARD (71-100) ----------
+  { question: "The angle of elevation of top of a building is 30°. If moving 20 m closer makes it 60°, the height of building is:", options: ["10√3 m", "20√3 m", "15√3 m", "None of these"], answer: ["B"] },
+  { question: "If sin A + cos A = √2 cos A (A acute), then A equals:", options: ["30°", "45°", "60°", "None of these"], answer: ["B"] },
+  { question: "If sin²A + cos²A = 1 and 1 + tan²A = sec²A, which are correct? (multiple correct)", options: ["Both are correct", "Only first is correct", "Only second is correct", "None of these"], answer: ["A"] },
+  { question: "A man 50 m from a flagpole sees top at 45°. Height of pole is:", options: ["50 m", "25 m", "50√2 m", "None of these"], answer: ["A"] },
+  { question: "Exact value of sin 15° is:", options: ["(√6 − √2)/4", "(√6 + √2)/4", "1/2", "None of these"], answer: ["A"] },
+  { question: "If sin A = 3/5 and cos B = 3/5 (both acute), which may be true? (multiple correct)", options: ["A = B", "A + B = 90°", "tan A = tan B", "None of these"], answer: ["A","C"] },
+  { question: "If tan(A/2) = 1/2, which formula(s) can find sin A? (multiple correct)", options: ["sin A = 2 tan(A/2)/(1 + tan²(A/2))", "sin A = 2 tan(A/2)/(1 − tan²(A/2))", "sin A = tan(A/2)/(1 + tan²(A/2))", "None of these"], answer: ["A"] },
+  { question: "If cos A = 5/13 (A acute), expression tan(A/2) equals (select correct simplification):", options: ["(1 − cos A)/sin A", "sin A/(1 + cos A)", "Both are equivalent", "None of these"], answer: ["C"] },
+  { question: "If sin A = 5/13 and cos A = 12/13, tan(90° − A) equals:", options: ["cot A = 12/5", "tan(90° − A) = tan A", "tan(90° − A) = 5/12", "None of these"], answer: ["A"] },
+  { question: "From point P angles of elevation to top and bottom of a tower are 60° and 30° respectively; horizontal separation is 10 m. Height of tower is:", options: ["10√3 m", "20√3 m", "5√3 m", "None of these"], answer: ["B"] },
+  { question: "If sin A = 12/13 and cos B = 5/13 (A,B acute), which statements may be true? (multiple correct)", options: ["A and B acute", "tan A = 12/5", "sin(A + B) computable by sum formula", "None of these"], answer: ["A","B","C"] },
+  { question: "tan(A + B) formula applied with tan A = 1, tan B = 1/2 gives:", options: ["3", "1", "1/3", "None of these"], answer: ["A"] },
+  { question: "If sin A + sin B = 1 for acute angles, which is true? (multiple correct)", options: ["Many pairs possible", "A = B = 30° only", "A = 90°, B = 0° possible", "None of these"], answer: ["A","C"] },
+  { question: "If shadows 10 m and 5 m correspond to the same tower at times with tan θ1 = h/10 and tan θ2 = h/5 and tan θ1 : tan θ2 = 1:2, h equals:", options: ["10", "20", "0", "None of these"], answer: ["A"] },
+  { question: "If cos A = 3/5 and cos B = 4/5 (A,B acute), which are true? (multiple correct)", options: ["sin A = 4/5", "sin B = 3/5", "sin(A + B) computable by formula", "None of these"], answer: ["A","B","C"] },
+  { question: "If tan A = 7/24, sin A equals:", options: ["7/25", "24/25", "7/24", "None of these"], answer: ["A"] },
+  { question: "If sin A = 20/29, cos 2A equals (use 1 − 2 sin²A):", options: ["41/841", "1 − 2 × (400/841) (i.e. 41/841)", "both A and B same", "None of these"], answer: ["C"] },
+  { question: "Two buildings 15 m and 10 m high stand 20 m apart. From a point on the line the angles of elevation to their tops are 60° and 45° respectively. Distance of point from foot of 15 m building is:", options: ["10 m", "5 m", "15 m", "None of these"], answer: ["B"] },
+  { question: "If sin A = 9/41, then which are correct? (multiple correct)", options: ["tan A = 9/40", "sec A = 41/40", "cos A = 40/41", "None of these"], answer: ["A","B","C"] },
+  { question: "If sin(A − B) = sin A cos B − cos A sin B, and sin A = 3/5, sin B = 4/5 (acute), sin(A − B) equals:", options: ["−7/25", "7/25", "0", "None of these"], answer: ["A"] },
+  { question: "If tan A = 1/3 and tan B = 1/4, tan(A − B) simplifies to:", options: ["1/13", "−1/13", "1", "None of these"], answer: ["A"] },
+  { question: "If sin A = 24/25, cos(A/2) equals (using half-angle):", options: ["4/5", "3/5", "7/25", "None of these"], answer: ["A"] },
+  { question: "For acute A, which are true? (multiple correct)", options: ["0 < sin A < 1", "tan A can be negative", "cos²A + sin²A = 1 for all A", "None of these"], answer: ["A","C"] },
+  { question: "A man 1.8 m tall casts shadow 2.4 m. At same time a tower casts shadow 18 m. Height of tower is:", options: ["13.5 m", "10 m", "14 m", "None of these"], answer: ["A"] },
+  { question: "If sin A = 0.56 and cos A = 0.83 (approx), which approximate equalities hold? (multiple correct)", options: ["sin²A + cos²A ≈ 1", "tan A ≈ 0.6747", "sec A ≈ 1.2048", "None of these"], answer: ["A","B","C"] },
+  { question: "If tan A = 8/15, cot(90° − A) equals:", options: ["tan A = 8/15", "cot(90° − A) = tan A = 8/15", "cot(90° − A) = cot A = 15/8", "None of these"], answer: ["B"] },
+  { question: "Given sin A = 5/13 and sin B = 12/13 (acute), sin(A + B) equals:", options: ["1", "0", "1/2", "None of these"], answer: ["A"] },
+  { question: "If cos A = −3/5 and A in QII, sin A equals:", options: ["4/5", "−4/5", "3/5", "None of these"], answer: ["A"] },
+  { question: "Which of these identities are always true? (multiple correct)", options: ["sec²θ = 1 + tan²θ", "csc²θ = 1 + cot²θ", "tanθ × cotθ = 1", "None of these"], answer: ["A","B","C"] },
+  { question: "Surveyor: from point A angle of elevation to tower top is 30°. From B, 40 m farther away (same line), angle is 15°. Height of tower approx is:", options: ["≈ 22 m", "≈ 20 m", "≈ 24 m", "None of these"], answer: ["A"] }
 ];
