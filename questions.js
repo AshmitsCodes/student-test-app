@@ -1,102 +1,252 @@
-window.questions = [
-  // --------- BASIC (1-35) ----------
-  { question: "sin 30° equals:", options: ["1/2", "√3/2", "1", "None of these"], answer: ["A"] },
-  { question: "cos 60° equals:", options: ["1/2", "√3/2", "0", "None of these"], answer: ["A"] },
-  { question: "tan 45° equals:", options: ["0", "1", "∞", "None of these"], answer: ["B"] },
-  { question: "sin²A + cos²A equals for any angle A:", options: ["0", "1", "sin A", "None of these"], answer: ["B"] },
-  { question: "cot 45° equals:", options: ["1", "√3", "0", "None of these"], answer: ["A"] },
-  { question: "sec 0° equals:", options: ["0", "1", "2", "None of these"], answer: ["B"] },
-  { question: "cosec 90° equals:", options: ["0", "1", "∞", "None of these"], answer: ["B"] },
-  { question: "If sin A = 3/5 (A acute), cos A equals:", options: ["4/5", "3/4", "5/4", "None of these"], answer: ["A"] },
-  { question: "tan A × cot A equals:", options: ["1", "tan²A", "0", "None of these"], answer: ["A"] },
-  { question: "cos²30° equals:", options: ["3/4", "1/2", "√3/2", "None of these"], answer: ["A"] },
-  { question: "sin 90° equals:", options: ["1", "0", "1/2", "None of these"], answer: ["A"] },
-  { question: "cos 0° equals:", options: ["0", "1", "−1", "None of these"], answer: ["B"] },
-  { question: "tan 0° equals:", options: ["0", "1", "Undefined", "None of these"], answer: ["A"] },
-  { question: "If cos A = 12/13 (A acute), tan A equals:", options: ["5/12", "12/5", "13/12", "None of these"], answer: ["A"] },
-  { question: "Reciprocal of sin A is:", options: ["cot A", "sec A", "cosec A", "None of these"], answer: ["C"] },
-  { question: "Reciprocal of cos A is:", options: ["sec A", "cosec A", "tan A", "None of these"], answer: ["A"] },
-  { question: "sin 45° equals:", options: ["√2/2", "√3/2", "1/2", "None of these"], answer: ["A"] },
-  { question: "cos 45° equals:", options: ["√2/2", "1", "0", "None of these"], answer: ["A"] },
-  { question: "sin 60° equals:", options: ["√3/2", "1/2", "√2/2", "None of these"], answer: ["A"] },
-  { question: "cos 30° equals:", options: ["√3/2", "1/2", "√2/2", "None of these"], answer: ["A"] },
-  { question: "If sin A = 0, then A could be (0°–360°):", options: ["0° or 180°", "90°", "45°", "None of these"], answer: ["A"] },
-  { question: "If cos A = 0, then A could be (0°–360°):", options: ["90° or 270°", "0°", "180°", "None of these"], answer: ["A"] },
-  { question: "tan 30° equals:", options: ["1/√3", "√3", "1", "None of these"], answer: ["A"] },
-  { question: "cot 30° equals:", options: ["√3", "1/√3", "1", "None of these"], answer: ["A"] },
-  { question: "sin(90° − A) equals:", options: ["cos A", "sin A", "tan A", "None of these"], answer: ["A"] },
-  { question: "tan(90° − A) equals:", options: ["cot A", "tan A", "sec A", "None of these"], answer: ["A"] },
-  { question: "Which of the following equals 1 + tan²A?", options: ["sec²A", "cosec²A", "1", "None of these"], answer: ["A"] },
-  { question: "Which of the following equals 1 + cot²A?", options: ["sec²A", "cosec²A", "1", "None of these"], answer: ["B"] },
-  { question: "If sin A = 5/13 (A acute), tan A equals:", options: ["5/12", "12/5", "5/13", "None of these"], answer: ["A"] },
-  { question: "If tan A = 0 then A equals (0°–180°):", options: ["0° or 180°", "90°", "45°", "None of these"], answer: ["A"] },
-  { question: "If sec A = 2 (A acute), cos A equals:", options: ["1/2", "2", "√3/2", "None of these"], answer: ["A"] },
-  { question: "If cosec A = 2 (A acute), sin A equals:", options: ["1/2", "2", "√3/2", "None of these"], answer: ["A"] },
-
-  // --------- INTERMEDIATE (36-70) ----------
-  { question: "If cos A = 4/5, sin A equals (A acute):", options: ["3/5", "4/3", "1/5", "None of these"], answer: ["A"] },
-  { question: "If tan A = 3/4, sec A equals:", options: ["5/4", "4/5", "5/3", "None of these"], answer: ["A"] },
-  { question: "If sin A = 3/5, cosec A equals:", options: ["5/3", "3/5", "4/5", "None of these"], answer: ["A"] },
-  { question: "If tan A = 1, which is true:", options: ["A = 45°", "A = 30°", "A = 60°", "None of these"], answer: ["A"] },
-  { question: "Simplify: sin²A − cos²A equals:", options: ["−cos 2A", "cos 2A", "sin 2A", "None of these"], answer: ["B"] },
-  { question: "Which is equal to cos 2A?", options: ["cos²A − sin²A", "sin²A + cos²A", "tan²A", "None of these"], answer: ["A"] },
-  { question: "Value of sin 15° equals:", options: ["(√6 − √2)/4", "(√6 + √2)/4", "1/2", "None of these"], answer: ["A"] },
-  { question: "Value of cos 15° equals:", options: ["(√6 + √2)/4", "(√6 − √2)/4", "√3/2", "None of these"], answer: ["A"] },
-  { question: "If sin(A + B) = sin A cos B + cos A sin B, it's called:", options: ["Sine addition formula", "Cosine addition formula", "Double-angle formula", "None of these"], answer: ["A"] },
-  { question: "If sin A = 12/13 (A acute), cos A equals:", options: ["5/13", "12/5", "13/12", "None of these"], answer: ["A"] },
-  { question: "If cos A = 5/13 (A acute), sin A equals:", options: ["12/13", "5/12", "13/5", "None of these"], answer: ["A"] },
-  { question: "If tan A = 5/12, sin A equals:", options: ["5/13", "12/13", "5/12", "None of these"], answer: ["A"] },
-  { question: "Which of these equalities are correct? (multiple correct possible)", options: ["sec²A − tan²A = 1", "tan²A + 1 = sec²A", "sin²A + cos²A = 2", "None of these"], answer: ["A","B"] },
-  { question: "From a point 20 m from a tower the angle of elevation is 45°, height of tower is:", options: ["20 m", "10 m", "20√2 m", "None of these"], answer: ["A"] },
-  { question: "A ladder 10 m long leans making 30° with ground. Height reached on wall:", options: ["5√3 m", "5 m", "10 m", "None of these"], answer: ["A"] },
-  { question: "If sin A = 0.6 and cos A = 0.8, tan A equals (approx):", options: ["0.75", "0.6", "1.333...", "None of these"], answer: ["A"] },
-  { question: "If tan A = 2/3, sin A equals (in simplest surd form):", options: ["2/√13", "3/√13", "2/3", "None of these"], answer: ["A"] },
-  { question: "Which of these are co-function identities? (multiple correct)", options: ["sin(90° − A) = cos A", "cos(90° − A) = sin A", "tan(90° − A) = tan A", "None of these"], answer: ["A","B"] },
-  { question: "If tan 2A = 1 and 2A is acute, smallest positive 2A is:", options: ["45°", "30°", "90°", "None of these"], answer: ["A"] },
-  { question: "If sin A = 7/25, cos A equals:", options: ["24/25", "7/24", "25/24", "None of these"], answer: ["A"] },
-  { question: "tan 60° × tan 30° equals:", options: ["1", "√3", "1/3", "None of these"], answer: ["A"] },
-  { question: "If sin²A = 1/4 (A acute), cos²A equals:", options: ["3/4", "1/2", "1/4", "None of these"], answer: ["A"] },
-  { question: "If sec A = 5/4 (A acute), cos A equals:", options: ["4/5", "5/4", "3/4", "None of these"], answer: ["A"] },
-  { question: "If cosec A = 13/5 (A acute), sin A equals:", options: ["5/13", "13/5", "12/13", "None of these"], answer: ["A"] },
-  { question: "Which is equal to sin 2A?", options: ["2 sin A cos A", "sin²A + cos²A", "cos 2A", "None of these"], answer: ["A"] },
-  { question: "If tan(A + B) = (tan A + tan B)/(1 − tan A tan B), and tan A = 1, tan B = 1/2, tan(A + B) equals:", options: ["3", "1", "−3", "None of these"], answer: ["A"] },
-  { question: "If in a right triangle opposite = 3 and hypotenuse = 5, cos equals:", options: ["4/5", "3/4", "5/3", "None of these"], answer: ["A"] },
-  { question: "Which of these are identities? (multiple correct)", options: ["sin²A + cos²A = 1", "tan A + cot A = 1", "1 + cot²A = cosec²A", "None of these"], answer: ["A","C"] },
-  { question: "If sin(30° + A) = sin30°cosA + cos30°sinA, this demonstrates:", options: ["Sine addition formula", "Sine double-angle formula", "Cosine addition formula", "None of these"], answer: ["A"] },
-  { question: "A pole 12 m high casts shadow 6√3 m. Angle of elevation of Sun is:", options: ["30°", "60°", "45°", "None of these"], answer: ["A"] },
-  { question: "If sin A = 8/17 (A acute), tan A equals:", options: ["8/15", "15/8", "8/17", "None of these"], answer: ["A"] },
-  { question: "If cos(A − B) = cos A cos B + sin A sin B, that is:", options: ["Cosine difference formula", "Sine addition formula", "Tangent formula", "None of these"], answer: ["A"] },
-  { question: "tan(90° − A) equals which of the following? (multiple correct)", options: ["cot A", "tan A", "1/tan A", "None of these"], answer: ["A","C"] },
-
-  // --------- HARD (71-100) ----------
-  { question: "The angle of elevation of top of a building is 30°. If moving 20 m closer makes it 60°, the height of building is:", options: ["10√3 m", "20√3 m", "15√3 m", "None of these"], answer: ["B"] },
-  { question: "If sin A + cos A = √2 cos A (A acute), then A equals:", options: ["30°", "45°", "60°", "None of these"], answer: ["B"] },
-  { question: "If sin²A + cos²A = 1 and 1 + tan²A = sec²A, which are correct? (multiple correct)", options: ["Both are correct", "Only first is correct", "Only second is correct", "None of these"], answer: ["A"] },
-  { question: "A man 50 m from a flagpole sees top at 45°. Height of pole is:", options: ["50 m", "25 m", "50√2 m", "None of these"], answer: ["A"] },
-  { question: "Exact value of sin 15° is:", options: ["(√6 − √2)/4", "(√6 + √2)/4", "1/2", "None of these"], answer: ["A"] },
-  { question: "If sin A = 3/5 and cos B = 3/5 (both acute), which may be true? (multiple correct)", options: ["A = B", "A + B = 90°", "tan A = tan B", "None of these"], answer: ["A","C"] },
-  { question: "If tan(A/2) = 1/2, which formula(s) can find sin A? (multiple correct)", options: ["sin A = 2 tan(A/2)/(1 + tan²(A/2))", "sin A = 2 tan(A/2)/(1 − tan²(A/2))", "sin A = tan(A/2)/(1 + tan²(A/2))", "None of these"], answer: ["A"] },
-  { question: "If cos A = 5/13 (A acute), expression tan(A/2) equals (select correct simplification):", options: ["(1 − cos A)/sin A", "sin A/(1 + cos A)", "Both are equivalent", "None of these"], answer: ["C"] },
-  { question: "If sin A = 5/13 and cos A = 12/13, tan(90° − A) equals:", options: ["cot A = 12/5", "tan(90° − A) = tan A", "tan(90° − A) = 5/12", "None of these"], answer: ["A"] },
-  { question: "From point P angles of elevation to top and bottom of a tower are 60° and 30° respectively; horizontal separation is 10 m. Height of tower is:", options: ["10√3 m", "20√3 m", "5√3 m", "None of these"], answer: ["B"] },
-  { question: "If sin A = 12/13 and cos B = 5/13 (A,B acute), which statements may be true? (multiple correct)", options: ["A and B acute", "tan A = 12/5", "sin(A + B) computable by sum formula", "None of these"], answer: ["A","B","C"] },
-  { question: "tan(A + B) formula applied with tan A = 1, tan B = 1/2 gives:", options: ["3", "1", "1/3", "None of these"], answer: ["A"] },
-  { question: "If sin A + sin B = 1 for acute angles, which is true? (multiple correct)", options: ["Many pairs possible", "A = B = 30° only", "A = 90°, B = 0° possible", "None of these"], answer: ["A","C"] },
-  { question: "If shadows 10 m and 5 m correspond to the same tower at times with tan θ1 = h/10 and tan θ2 = h/5 and tan θ1 : tan θ2 = 1:2, h equals:", options: ["10", "20", "0", "None of these"], answer: ["A"] },
-  { question: "If cos A = 3/5 and cos B = 4/5 (A,B acute), which are true? (multiple correct)", options: ["sin A = 4/5", "sin B = 3/5", "sin(A + B) computable by formula", "None of these"], answer: ["A","B","C"] },
-  { question: "If tan A = 7/24, sin A equals:", options: ["7/25", "24/25", "7/24", "None of these"], answer: ["A"] },
-  { question: "If sin A = 20/29, cos 2A equals (use 1 − 2 sin²A):", options: ["41/841", "1 − 2 × (400/841) (i.e. 41/841)", "both A and B same", "None of these"], answer: ["C"] },
-  { question: "Two buildings 15 m and 10 m high stand 20 m apart. From a point on the line the angles of elevation to their tops are 60° and 45° respectively. Distance of point from foot of 15 m building is:", options: ["10 m", "5 m", "15 m", "None of these"], answer: ["B"] },
-  { question: "If sin A = 9/41, then which are correct? (multiple correct)", options: ["tan A = 9/40", "sec A = 41/40", "cos A = 40/41", "None of these"], answer: ["A","B","C"] },
-  { question: "If sin(A − B) = sin A cos B − cos A sin B, and sin A = 3/5, sin B = 4/5 (acute), sin(A − B) equals:", options: ["−7/25", "7/25", "0", "None of these"], answer: ["A"] },
-  { question: "If tan A = 1/3 and tan B = 1/4, tan(A − B) simplifies to:", options: ["1/13", "−1/13", "1", "None of these"], answer: ["A"] },
-  { question: "If sin A = 24/25, cos(A/2) equals (using half-angle):", options: ["4/5", "3/5", "7/25", "None of these"], answer: ["A"] },
-  { question: "For acute A, which are true? (multiple correct)", options: ["0 < sin A < 1", "tan A can be negative", "cos²A + sin²A = 1 for all A", "None of these"], answer: ["A","C"] },
-  { question: "A man 1.8 m tall casts shadow 2.4 m. At same time a tower casts shadow 18 m. Height of tower is:", options: ["13.5 m", "10 m", "14 m", "None of these"], answer: ["A"] },
-  { question: "If sin A = 0.56 and cos A = 0.83 (approx), which approximate equalities hold? (multiple correct)", options: ["sin²A + cos²A ≈ 1", "tan A ≈ 0.6747", "sec A ≈ 1.2048", "None of these"], answer: ["A","B","C"] },
-  { question: "If tan A = 8/15, cot(90° − A) equals:", options: ["tan A = 8/15", "cot(90° − A) = tan A = 8/15", "cot(90° − A) = cot A = 15/8", "None of these"], answer: ["B"] },
-  { question: "Given sin A = 5/13 and sin B = 12/13 (acute), sin(A + B) equals:", options: ["1", "0", "1/2", "None of these"], answer: ["A"] },
-  { question: "If cos A = −3/5 and A in QII, sin A equals:", options: ["4/5", "−4/5", "3/5", "None of these"], answer: ["A"] },
-  { question: "Which of these identities are always true? (multiple correct)", options: ["sec²θ = 1 + tan²θ", "csc²θ = 1 + cot²θ", "tanθ × cotθ = 1", "None of these"], answer: ["A","B","C"] },
-  { question: "Surveyor: from point A angle of elevation to tower top is 30°. From B, 40 m farther away (same line), angle is 15°. Height of tower approx is:", options: ["≈ 22 m", "≈ 20 m", "≈ 24 m", "None of these"], answer: ["A"] }
-];
+[
+  {
+    "question": "What is the main function of a switch in an electric circuit?",
+    "options": ["Store electrical energy", "Control the flow of current", "Convert electricity into light", "Measure voltage"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "Which materials are good conductors of electricity?",
+    "options": ["Copper", "Aluminum", "Plastic", "Gold"],
+    "correct_answers": [0, 1, 3]
+  },
+  {
+    "question": "In an electric circuit, the bulb will glow only when:",
+    "options": ["The circuit is closed", "The switch is open", "There is a break in the wire", "The cell is weak"],
+    "correct_answers": [0]
+  },
+  {
+    "question": "Which part of the bulb produces light?",
+    "options": ["Base", "Glass", "Filament", "Switch"],
+    "correct_answers": [2]
+  },
+  {
+    "question": "Which of the following are insulators?",
+    "options": ["Rubber", "Glass", "Iron", "Plastic"],
+    "correct_answers": [0, 1, 3]
+  },
+  {
+    "question": "The two terminals of an electric cell are called:",
+    "options": ["North and South", "Positive and Negative", "Input and Output", "Start and End"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "A battery is formed by:",
+    "options": ["Joining cells in series", "Joining bulbs", "Joining wires", "Connecting switches"],
+    "correct_answers": [0]
+  },
+  {
+    "question": "Which energy is stored in a cell?",
+    "options": ["Mechanical", "Chemical", "Heat", "Light"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "Which of these will allow electricity to pass?",
+    "options": ["Eraser", "Iron nail", "Rubber band", "Plastic cup"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "Why should electrical wires be covered with plastic?",
+    "options": ["To make them colorful", "To prevent electric shocks", "To make them heavy", "To increase conductivity"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "Which device is used to test whether a material conducts electricity?",
+    "options": ["Fuse", "Tester", "Generator", "Switch"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "What happens if the filament of a bulb breaks?",
+    "options": ["Bulb glows dim", "Bulb does not glow", "Bulb glows brighter", "Bulb explodes"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "Which of the following is a portable source of electricity?",
+    "options": ["Battery", "Power station", "Wind turbine", "Dam"],
+    "correct_answers": [0]
+  },
+  {
+    "question": "The flow of electric charge is called:",
+    "options": ["Voltage", "Current", "Resistance", "Power"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "Which part of the bulb connects to the circuit wires?",
+    "options": ["Glass cover", "Filament", "Base terminals", "Switch"],
+    "correct_answers": [2]
+  },
+  {
+    "question": "Which of these can be used as an emergency switch?",
+    "options": ["Wood stick", "Metal spoon", "Rubber tube", "Plastic ruler"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "The inside of electric wires is usually made of:",
+    "options": ["Copper", "Plastic", "Wood", "Rubber"],
+    "correct_answers": [0]
+  },
+  {
+    "question": "Which of the following are sources of electricity?",
+    "options": ["Battery", "Solar cell", "Bulb", "Generator"],
+    "correct_answers": [0, 1, 3]
+  },
+  {
+    "question": "Why should you not touch a switch with wet hands?",
+    "options": ["Water makes the switch slippery", "Water is a conductor of electricity", "Switch will break", "Bulb will fuse"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "Which of these will NOT complete an electric circuit?",
+    "options": ["Copper wire", "Steel spoon", "Rubber band", "Iron rod"],
+    "correct_answers": [2]
+  },
+  {
+    "question": "The device used to protect circuits from high current is called:",
+    "options": ["Switch", "Fuse", "Tester", "Resistor"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "In which direction does current flow in a circuit (conventional current)?",
+    "options": ["Negative to positive", "Positive to negative", "Both directions", "Randomly"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "Which of these is a renewable source of electricity?",
+    "options": ["Solar cell", "Battery", "Diesel generator", "Coal power plant"],
+    "correct_answers": [0]
+  },
+  {
+    "question": "What happens if the circuit is open?",
+    "options": ["Current flows", "No current flows", "Bulb glows", "Voltage increases"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "Which materials are used to make a bulb's filament?",
+    "options": ["Copper", "Tungsten", "Aluminum", "Iron"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "Which of the following are examples of insulators?",
+    "options": ["Plastic", "Rubber", "Glass", "Copper"],
+    "correct_answers": [0, 1, 2]
+  },
+  {
+    "question": "Which device changes chemical energy into electrical energy?",
+    "options": ["Cell", "Generator", "Bulb", "Switch"],
+    "correct_answers": [0]
+  },
+  {
+    "question": "The outer covering of an electric wire is made of:",
+    "options": ["Copper", "Plastic", "Aluminum", "Glass"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "Which of the following is used to store electrical charge?",
+    "options": ["Battery", "Switch", "Capacitor", "Bulb"],
+    "correct_answers": [2]
+  },
+  {
+    "question": "A simple circuit must have:",
+    "options": ["Source, path, and device", "Switch, fan, table", "Source, bulb, table", "Wire, fan, battery"],
+    "correct_answers": [0]
+  },
+  {
+    "question": "Which of these converts electrical energy into light energy?",
+    "options": ["Switch", "Bulb", "Fuse", "Battery"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "Which objects in the list are conductors?",
+    "options": ["Iron rod", "Steel spoon", "Rubber eraser", "Copper wire"],
+    "correct_answers": [0, 1, 3]
+  },
+  {
+    "question": "Why are multiple cells sometimes used in a circuit?",
+    "options": ["To reduce current", "To increase voltage", "To make wires shorter", "To stop electricity"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "If a bulb does not glow in a closed circuit, possible reasons are:",
+    "options": ["Bulb is fused", "Cell is weak", "Wire is broken", "Switch is closed"],
+    "correct_answers": [0, 1, 2]
+  },
+  {
+    "question": "The unit of electric current is:",
+    "options": ["Volt", "Ampere", "Ohm", "Watt"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "Which of these is a poor conductor of electricity?",
+    "options": ["Wood", "Silver", "Gold", "Copper"],
+    "correct_answers": [0]
+  },
+  {
+    "question": "Electric wires are usually made of copper because:",
+    "options": ["It is a good conductor", "It is cheap", "It is an insulator", "It is light in weight"],
+    "correct_answers": [0]
+  },
+  {
+    "question": "Which of these can act as a source of electricity?",
+    "options": ["Fruit battery", "Solar cell", "Water turbine", "All of the above"],
+    "correct_answers": [3]
+  },
+  {
+    "question": "In a torch, the switch is connected in:",
+    "options": ["Series with the bulb", "Parallel with the bulb", "Across the cell", "Inside the bulb"],
+    "correct_answers": [0]
+  },
+  {
+    "question": "Why are fuses important in circuits?",
+    "options": ["They store current", "They measure voltage", "They protect from overcurrent", "They light up"],
+    "correct_answers": [2]
+  },
+  {
+    "question": "Which of these are examples of sources of electricity?",
+    "options": ["Battery", "Power station", "Switch", "Solar panel"],
+    "correct_answers": [0, 1, 3]
+  },
+  {
+    "question": "A tester works because:",
+    "options": ["It has a strong magnet", "It allows current to pass through and light a bulb", "It stores electricity", "It creates electricity"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "What is the main reason for covering switches with plastic?",
+    "options": ["Decoration", "Prevent electric shock", "Reduce cost", "Increase speed of current"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "What happens when a conductor is placed between the two terminals of a cell?",
+    "options": ["A current flows", "Voltage drops to zero", "Cell stops working", "Bulb explodes"],
+    "correct_answers": [0]
+  },
+  {
+    "question": "Which of the following are part of a simple circuit?",
+    "options": ["Source", "Conductor", "Load", "Insulator"],
+    "correct_answers": [0, 1, 2]
+  },
+  {
+    "question": "The filament in an electric bulb glows because:",
+    "options": ["It is painted white", "It is heated by electric current", "It is made of copper", "It has low resistance"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "Which of the following can act as insulators?",
+    "options": ["Dry wood", "Rubber", "Glass", "Steel"],
+    "correct_answers": [0, 1, 2]
+  },
+  {
+    "question": "What does a closed switch do in a circuit?",
+    "options": ["Stops current", "Allows current to flow", "Makes bulb dim", "Increases resistance"],
+    "correct_answers": [1]
+  },
+  {
+    "question": "Which combination will make a bulb glow?",
+    "options": ["Cell + copper wire + bulb", "Cell + plastic wire + bulb", "Cell + rubber band + bulb", "Cell + wood stick + bulb"],
+    "correct_answers": [0]
+  },
+  {
+    "question": "Electricity can be produced from:",
+    "options": ["Wind", "Water", "Sunlight", "All of the above"],
+    "correct_answers": [3]
+  }
+]
